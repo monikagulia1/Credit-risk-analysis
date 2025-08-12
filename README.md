@@ -70,11 +70,15 @@ Integrate the model into your lending decision process or credit risk management
 
 ## Results
 
-Model	AUC (CV)	Specificity	Accuracy	Recall	Training Speed	Model Size
-LightGBM	Comparable (Best)	57%	77%	Lower	Fastest	~5x smaller than RF
-Random Forest	Comparable	54%	74%	Higher	Slower	Larger
-Logistic Regression	Comparable	Moderate	Moderate	Highest	Fast	Small
-LightGBM was selected for deployment due to its superior specificity, accuracy, faster training time, and smaller model size, despite a trade-off in recall.
+| Model               | AUC (Cross-Validated) | Specificity | Accuracy | Recall   | Training Speed | Model Size                |
+|---------------------|----------------------:|------------:|---------:|---------:|---------------:|--------------------------:|
+| **LightGBM**        | Comparable (Best)      | 57%         | 77%      | Lower    | Fastest       | ~5x smaller than RF       |
+| Random Forest       | Comparable             | 54%         | 74%      | Higher   | Slower        | Larger                   |
+| Logistic Regression | Comparable             | Moderate    | Moderate | Highest  | Fast          | Small                    |
+
+**Summary:**  
+LightGBM demonstrates the best balance of specificity and accuracy while maintaining the fastest training speed and a much smaller model size compared to Random Forest. Although Logistic Regression yields the highest recall, LightGBM is preferred in this credit risk context for its superior specificity, which helps reduce false positives (risky borrowers incorrectly classified as safe).
+
 
 ## Contributing
 
