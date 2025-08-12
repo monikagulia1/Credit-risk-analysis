@@ -61,12 +61,13 @@ Integrate the model into your lending decision process or credit risk management
 
 ## Project Structure
 
-├── data/                  # Raw and processed datasets  
-├── models/                # Trained model files and checkpoints  
-├── notebooks/             # Jupyter notebooks for exploration and analysis  
-├── scripts/               # Training, evaluation, and utility scripts  
-├── requirements.txt       # Project dependencies  
-├── README.md              # Project documentation  
+- `data/` — Raw and processed datasets  
+- `models/` — Trained model files and checkpoints  
+- `notebooks/` — Jupyter notebooks for exploration and analysis  
+- `scripts/` — Training, evaluation, and utility scripts  
+- `requirements.txt` — Project dependencies  
+- `README.md` — Project documentation  
+
 
 ## Results
 
