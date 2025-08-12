@@ -92,19 +92,31 @@ GitHub: https://github.com/monikagulia1
 
 ## Future Work
 
-The project will be extended to include a full credit risk assessment framework incorporating additional key metrics:
-Loss Given Default (LGD): Proportion of exposure expected to be lost after default, calculated as
-1
-−
-Recovery Rate
-1−Recovery Rate.
-Exposure at Default (EAD): Estimated outstanding amount at default, representing total exposure subject to loss.
-Expected Loss (EL): Combines PD, EAD, and LGD to quantify average anticipated credit loss:
+Future enhancements will focus on expanding the credit risk framework to include additional key components:
 
-LGD
-EL=PD×EAD×LGD
-Additional focus areas include:
-Developing updated PD models reflecting recent borrower population changes.
-Integrating LGD and EAD modeling to enable comprehensive Expected Loss calculation.
-Fine-tuning thresholds aligned with various lending strategies and risk appetites.
-Implementing continuous monitoring and recalibration to ensure model robustness over time.
+- **Loss Given Default (LGD):**  
+  The expected proportion of the total exposure lost if a borrower defaults. Calculated as:  
+  \[
+  \text{LGD} = 1 - \text{Recovery Rate}
+  \]  
+  LGD can be expressed as a percentage or a monetary value representing potential loss.
+
+- **Exposure at Default (EAD):**  
+  The predicted total exposure the lender is at risk of when the borrower defaults. It represents the outstanding loan amount subject to loss.
+
+- **Expected Loss (EL):**  
+  A combined risk metric calculated as:  
+  \[
+  \text{EL} = \text{PD} \times \text{EAD} \times \text{LGD}
+  \]  
+  This quantifies the average anticipated credit loss, integrating the probability of default, exposure, and loss severity.
+
+- **Updated PD Models:**  
+  Developing Probability of Default models that better reflect the most recent borrower population and economic conditions to improve predictive accuracy.
+
+- **Threshold Optimization:**  
+  Fine-tuning decision thresholds to balance false positives and false negatives in line with varying lending strategies and risk appetites.
+
+- **Model Monitoring and Recalibration:**  
+  Implementing continuous monitoring processes and regular retraining to maintain model performance and relevance over time.
+
