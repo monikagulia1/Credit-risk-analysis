@@ -95,28 +95,23 @@ GitHub: https://github.com/monikagulia1
 Future enhancements will focus on expanding the credit risk framework to include additional key components:
 
 - **Loss Given Default (LGD):**  
-  The expected proportion of the total exposure lost if a borrower defaults. Calculated as:  
-  \[
-  \text{LGD} = 1 - \text{Recovery Rate}
-  \]  
-  LGD can be expressed as a percentage or a monetary value representing potential loss.
+  The expected proportion of total exposure lost if a borrower defaults. Calculated as:  
+  LGD = 1 − Recovery Rate  
+  LGD can be expressed as a percentage or monetary value representing potential loss.
 
 - **Exposure at Default (EAD):**  
   The predicted total exposure the lender is at risk of when the borrower defaults. It represents the outstanding loan amount subject to loss.
 
 - **Expected Loss (EL):**  
   A combined risk metric calculated as:  
-  \[
-  \text{EL} = \text{PD} \times \text{EAD} \times \text{LGD}
-  \]  
-  This quantifies the average anticipated credit loss, integrating the probability of default, exposure, and loss severity.
+  EL = PD × EAD × LGD  
+  This quantifies the average anticipated credit loss by integrating the probability of default, exposure, and loss severity.
 
 - **Updated PD Models:**  
-  Developing Probability of Default models that better reflect the most recent borrower population and economic conditions to improve predictive accuracy.
+  Developing Probability of Default models that better reflect recent borrower populations and economic conditions to improve predictive accuracy.
 
 - **Threshold Optimization:**  
   Fine-tuning decision thresholds to balance false positives and false negatives in line with varying lending strategies and risk appetites.
 
 - **Model Monitoring and Recalibration:**  
-  Implementing continuous monitoring processes and regular retraining to maintain model performance and relevance over time.
-
+  Implementing continuous monitoring and regular retraining to maintain model performance and relevance over time.
